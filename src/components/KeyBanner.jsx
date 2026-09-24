@@ -1,6 +1,6 @@
 // แถบเตือนเมื่อยังไม่ได้ตั้งค่า API key จะหายไปเองเมื่อ .env ถูกต้องและรัน npm start ใหม่
 function KeyBanner() {
-  const key = process.env.TMDB_KEY;
+  const key = process.env.REACT_APP_TMDB_KEY;
   const looksValid = /^[a-f0-9]{32}$/i.test(key || '');   // API Key v3 ของ TMDB ยาว 32 ตัว เป็นเลขฐานสิบหก
   if (looksValid) return null;
 
